@@ -1,0 +1,13 @@
+*
+
+!.tmux.conf
+!.wezterm.lua
+!.zshrc
+!coolnight.itermcolors
+!.config/aerospace/
+!.config/alacritty/
+!.config/nvim/
+
+!.config/aerospace/**
+!.config/alacritty/**
+!.config/nvim/**
