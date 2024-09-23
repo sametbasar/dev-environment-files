@@ -67,6 +67,12 @@ return {
       end,
     })
 
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      pattern = { "*.tsx", "*.ts", "*.jsx", "*.js" },
+      command = "silent! EslintFixAll",
+      group = vim.api.nvim_create_augroup("MyAutocmdsJavaScripFormatting", {}),
+    })
+
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -134,4 +140,3 @@ return {
     })
   end,
 }
-
