@@ -5,29 +5,14 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
-    -- import mason
-    local mason = require("mason")
-
-    -- import mason-lspconfig
-    local mason_lspconfig = require("mason-lspconfig")
-
-    local mason_tool_installer = require("mason-tool-installer")
-
-    -- enable mason and configure icons
-    mason.setup({
+    require("mason").setup({
       ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
+        icons = { package_installed = "✓", package_pending = "➜", package_uninstalled = "✗" },
       },
     })
-
-    mason_lspconfig.setup({
-      -- list of servers for mason to install
+    require("mason-lspconfig").setup({
       ensure_installed = {
-        "tsserver",
+        "ts_ls", -- Aşağıdaki notu oku
         "html",
         "cssls",
         "tailwindcss",
@@ -38,17 +23,10 @@ return {
         "prismals",
         "pyright",
       },
+      automatic_installation = true,
     })
-
-    mason_tool_installer.setup({
-      ensure_installed = {
-        "prettier", -- prettier formatter
-        "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "pylint",
-        "eslint_d",
-      },
+    require("mason-tool-installer").setup({
+      ensure_installed = { "prettier", "stylua", "isort", "black", "pylint", "eslint_d" },
     })
   end,
 }

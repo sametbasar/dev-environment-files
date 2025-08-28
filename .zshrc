@@ -120,3 +120,11 @@ alias cd="z"
 
 export ANDROID_HOME=/Users/samet.basar/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Android SDK Ayarları
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
+export PATH="$JAVA_HOME/bin:$PATH"
