@@ -3,7 +3,8 @@ return {
   priority = 1000,
 
   init = function()
-    vim.g.nord_bold = false        
+    vim.g.nord_bold = false
+    -- vim.g.nord_contrast=true
   end,
 
   config = function()
