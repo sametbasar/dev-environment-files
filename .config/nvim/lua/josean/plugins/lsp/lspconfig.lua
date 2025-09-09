@@ -58,7 +58,7 @@ return {
       end,
     })
 
-    vim.api.nvim_create_autocmd("BufWritePre", {
+    vim.api.nvim_create_autocmd("BufWritePost", {
       pattern = { "*.tsx", "*.ts", "*.jsx", "*.js" },
       command = "silent! EslintFixAll",
       group = vim.api.nvim_create_augroup("MyAutocmdsJavaScripFormatting", {}),
