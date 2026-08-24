@@ -1,21 +1,48 @@
-import = [
-    "~/.config/alacritty/themes/themes/nord.toml"
-]
-
-[ env ]
+[env]
 TERM = "xterm-256color"
 
 [window]
 padding.x = 10
 padding.y = 10
-
 decorations = "Buttonless"
+opacity = 0.75
+blur = true
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-
-#regular
 size = 24
 
-#for video
+# for video
 # size = 35.0
+
+[colors.primary]
+foreground = "#CBE0F0"
+background = "#011423"
+
+[colors.cursor]
+text = "#011423"
+cursor = "#47FF9C"
+
+[colors.selection]
+text = "#f3d9c4"
+background = "#706b4e"
+
+[colors.normal]
+black   = "#214969"
+red     = "#E52E2E"
+green   = "#44FFB1"
+yellow  = "#FFE073"
+blue    = "#0FC5ED"
+magenta = "#a277ff"
+cyan    = "#24EAF7"
+white   = "#24EAF7"
+
+[colors.bright]
+black   = "#214969"
+red     = "#E52E2E"
+green   = "#44FFB1"
+yellow  = "#FFE073"
+blue    = "#A277FF"
+magenta = "#a277ff"
+cyan    = "#24EAF7"
+white   = "#24EAF7"

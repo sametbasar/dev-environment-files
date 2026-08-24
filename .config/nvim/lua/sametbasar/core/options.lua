@@ -37,3 +37,11 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- automatically reload file if changed outside of vim
+opt.autoread = true
+
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
+	pattern = "*",
+	command = "if mode() != 'c' | checktime | endif",
+})

@@ -1,5 +1,7 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
+ZSH_DISABLE_COMPFIX=true
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -128,3 +130,5 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 export JAVA_HOME=$(/usr/libexec/java_home -v17)
 export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+source /Users/samet.basar/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
