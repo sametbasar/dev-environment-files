@@ -131,4 +131,3 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v17)
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-source /Users/samet.basar/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script

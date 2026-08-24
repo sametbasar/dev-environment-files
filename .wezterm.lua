@@ -19,8 +19,14 @@ config.colors = {
 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 
-config.font = wezterm.font("MesloLGS Nerd Font Mono")
-config.font_size = 19
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
+config.font_size = 17.0
+
+config.freetype_load_target = "Light"
+config.freetype_render_target = "HorizontalLcd"
+config.freetype_load_flags = "NO_HINTING"
+
+config.font_rasterizer = "FreeType"
 
 config.enable_tab_bar = false
 
